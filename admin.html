@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адміністратор | Lollypop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="admin-page">
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Lollypop головна">
+        <span class="logo-mark">🍭</span>
+        <span>
+          <strong>Lollypop</strong>
+          <small>admin panel</small>
+        </span>
+      </a>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <a href="index.html">Сайт</a>
+        <a href="index.html#products">Асортимент</a>
+        <a href="index.html#contacts">Контакти</a>
+      </nav>
+    </header>
+
+    <main class="admin-shell">
+      <section class="login-card" id="loginView">
+        <p class="eyebrow">Сторінка адміністратора</p>
+        <h1>Вхід до панелі</h1>
+        <p>Тестовий доступ: <strong>admin</strong> / <strong>admin2026</strong></p>
+        <form id="loginForm" class="admin-form">
+          <label>
+            <span>Логін</span>
+            <input type="text" name="username" autocomplete="username" required />
+          </label>
+          <label>
+            <span>Пароль</span>
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+          <button class="button primary" type="submit">Увійти</button>
+          <p class="form-message" id="loginMessage" role="status"></p>
+        </form>
+      </section>
+
+      <section class="dashboard hidden" id="dashboardView">
+        <div class="dashboard-head">
+          <div>
+            <p class="eyebrow">Lollypop CRM</p>
+            <h1>Панель адміністратора</h1>
+          </div>
+          <button class="button secondary" type="button" id="logoutButton">Вийти</button>
+        </div>
+
+        <div class="stats-grid">
+          <article>
+            <span id="subscriberCount">0</span>
+            <p>підписників</p>
+          </article>
+          <article>
+            <span id="productCount">3</span>
+            <p>позиції асортименту</p>
+          </article>
+          <article>
+            <span>2026</span>
+            <p>навчальний проєкт</p>
+          </article>
+        </div>
+
+        <div class="admin-columns">
+          <section class="admin-panel">
+            <h2>Підписники</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ім'я</th>
+                    <th>Email</th>
+                    <th>Дата</th>
+                  </tr>
+                </thead>
+                <tbody id="subscriberRows"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="admin-panel">
+            <h2>Додати товар</h2>
+            <form id="productForm" class="admin-form">
+              <label>
+                <span>Назва</span>
+                <input type="text" name="title" placeholder="Карамельний набір" required />
+              </label>
+              <label>
+                <span>Опис</span>
+                <textarea name="description" rows="4" placeholder="Короткий опис товару" required></textarea>
+              </label>
+              <button class="button primary" type="submit">Додати</button>
+            </form>
+            <ul class="product-list" id="adminProductList"></ul>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,112 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lollypop - Майстерня карамелі</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lollypop Craft Caramel</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html" aria-label="Lollypop головна">
+        <span class="logo-mark">🍭</span>
+        <span>
+          <strong>Lollypop</strong>
+          <small>craft caramel</small>
+        </span>
+      </a>
 
-    <nav class="navbar">
-        <div class="logo"><img src="icons/candy-100.png">Lollypop <span>craft caramel</span></div>
-        <ul class="nav-links">
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Про нас</a></li>
-            <li><a href="#">Крафтова майстерня</a></li>
-            <li><a href="#">Асортименти</a></li>
-            <li><a href="#">Контакти</a></li>
-        </ul>
-        <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <header class="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <span class="date-badge">Майстерня Крафтової Карамелі «Lollypop» — Квітень 2026</span>
-                <h1>"Welcome to the world of crafting joy!"</h1>
-                <p>Відкрийте смак справжньої карамелі, виготовленої вручну за унікальними рецептами.</p>
-                <div class="hero-buttons">
-                    <button class="btn-fill">Дізнатися більше</button>
-                    <button class="btn-outline">Наша майстерня</button>
-                </div>
-            </div>
-            <div class="hero-img">
-                <img src="img/Group2.png" style="width: 512px; height: 512px;" alt="Master">
-            </div>
-        </div>
+      <nav class="main-nav" aria-label="Головна навігація">
+        <a href="#home">Головна</a>
+        <a href="#about">Про нас</a>
+        <a href="#workshop">Крафтова майстерня</a>
+        <a href="#products">Асортимент</a>
+        <a href="#contacts">Контакти</a>
+        <a class="nav-admin" href="admin.html">Адмін</a>
+      </nav>
     </header>
 
-    <section class="products">
-        <div class="card">
-            <img src="img/konfety_ledency_650x406.jpg" alt="Candy">
-            <div class="card-content">
-                <h3>УНІКАЛЬНІ ЦУКЕРКИ З МАЛЮНКОМ</h3>
-                <p>Ідеально для брендів та тематичних наборів.</p>
-                <button class="card-btn">Дізнатися замовлення</button>
-            </div>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Майстерня крафтової карамелі • Lollypop • Київ • 2026</p>
+          <h1>Welcome to the world of crafting joy!</h1>
+          <p>
+            Відкрийте смак справжньої карамелі, виготовленої вручну за унікальними рецептами. Ми створюємо більше, ніж просто солодощі.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">Дізнатися більше</a>
+            <a class="button secondary" href="#workshop">Наша майстерня</a>
+          </div>
         </div>
-        <div class="card">
-            <img src="img/Arc-en-ciel_comestible.jpg" alt="Macarons">
-            <div class="card-content">
-                <h3>СТАНДАРТНИЙ АСОРТИМЕНТ</h3>
-                <p>Класичні смаки та форми, готові до подарунка.</p>
-                <button class="card-btn">Дізнатися про асортимент</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/0_c445_55da703e_L.jpg" alt="Workshop">
-            <div class="card-content">
-                <h3>КРАФТОВА МАЙСТЕРНЯ</h3>
-                <p>Виготовлено з любов'ю вручну.</p>
-                <button class="card-btn">Про нашу майстерню</button>
-            </div>
-        </div>
-    </section>
+        <div class="hero-media" aria-label="Майстер карамелі у майстерні"><img src="img/Group2.png"></div>
+      </section>
 
-    <section class="benefits">
-        <div class="benefit">
-            <div class="circle-icon"><i class="fa fa-heart"></i></div>
-            <h4>MADE WITH LOVE</h4>
-            <p>Кожна цукерка виготовляється вручну з душею</p>
-        </div>
-        <div class="benefit">
-            <div class="circle-icon"><i class="fa fa-gift"></i></div>
-            <h4>THE PERFECT GIFT</h4>
-            <p>Створюємо унікальні набори для будь-якої події</p>
-        </div>
-        <div class="benefit">
-            <div class="circle-icon"><i class="fa fa-star"></i></div>
-            <h4>NATURAL INGREDIENTS</h4>
-            <p>Використовуємо лише якісні та натуральні компоненти</p>
-        </div>
-    </section>
+      <section class="products section" id="products">
+        <article class="product-card" id="workshop">
+          <img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&w=700&q=80" alt="Яскраві льодяники з малюнком" />
+          <div>
+            <h2>Унікальні цукерки з малюнком</h2>
+            <p>Цукерки, що бережуть тепло маленьких історій.</p>
+            <a class="mini-button" href="#subscribe">Додати до замовлення</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=700&q=80" alt="Кольорові макаруни у вітрині" />
+          <div>
+            <h2>Стандартний асортимент</h2>
+            <p>Класичні смаки та форми, готові до подарунка.</p>
+            <a class="mini-button" href="#subscribe">Додати до замовлення</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?auto=format&fit=crop&w=700&q=80" alt="Різні солодощі на світлому фоні" />
+          <div>
+            <h2>Крафтова майстерня</h2>
+            <p>Виготовлення з любов'ю вручну для подій і свят.</p>
+            <a class="mini-button" href="#subscribe">Створити набір</a>
+          </div>
+        </article>
+      </section>
 
-    <footer class="footer">
-        <div class="footer-cta">
-            <div class="footer-icon"><img src="icons/bag-96.png"></div>
-            <h2>READY TO TRY?</h2>
-            <button class="btn-white">Зв'язатися з нами</button>
+      <section class="features section" id="about">
+        <div class="feature">
+          <span><img src="icons/heart-96.png"></span>
+          <h2>Made with love</h2>
+          <p>Кожна цукерка виготовляється вручну з душею.</p>
         </div>
-        <div class="footer-bottom">
-            <div class="f-logo">Lollypop</div>
-            <div class="f-nav">
-                <a href="#">Головна</a>
-                <a href="#">Про нас</a>
-                <a href="#">Контакти</a>
-            </div>
-            <div class="f-contacts">
-                <p>+380 (XX) XXX XX XX</p>
-                <p>Катеринівка, Україна</p>
-            </div>
+        <div class="feature">
+          <span><img src="icons/present-96.png"></span>
+          <h2>The perfect gift</h2>
+          <p>Створюємо унікальні набори для будь-якої події.</p>
         </div>
+        <div class="feature">
+          <span><img src="icons/stars-96.png"></span>
+          <h2>Natural ingredients</h2>
+          <p>Використовуємо лише якісні натуральні компоненти.</p>
+        </div>
+      </section>
+
+      <section class="subscribe" id="subscribe">
+        <div class="subscribe-panel">
+          <span class="mail-icon">✉</span>
+          <h2>Ready to try?</h2>
+          <p>Підпишіться, щоб отримати новинки та солодкі акції.</p>
+          <form class="subscribe-form" id="subscribeForm">
+            <label>
+              <span>Ваше ім'я</span>
+              <input type="text" name="name" placeholder="Марія" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="maria@example.com" required />
+            </label>
+            <button class="button light" type="submit">Зв'язатися з нами</button>
+            <p class="form-message" id="subscribeMessage" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer-grid">
+        <div>
+          <a class="logo footer-logo" href="index.html">
+            <span class="logo-mark">🍭</span>
+            <span>
+              <strong>Lollypop</strong>
+              <small>craft caramel</small>
+            </span>
+          </a>
+          <p>Майстерня крафтової карамелі ручної роботи.</p>
+        </div>
+        <div>
+          <h2>Навігація</h2>
+          <a href="#home">Головна</a>
+          <a href="#about">Про нас</a>
+          <a href="#workshop">Майстерня</a>
+          <a href="#products">Асортимент</a>
+          <a href="admin.html">Адміністратор</a>
+        </div>
+        <div>
+          <h2>Контакти</h2>
+          <p>+38 (093) XXX XX XX</p>
+          <p>hello@lollypop-caramel.com</p>
+          <p>Київ, Україна</p>
+        </div>
+      </div>
+      <p class="copyright">© Copyright Lollypop Craft Caramel</p>
     </footer>
 
-    <script src="script/main.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
